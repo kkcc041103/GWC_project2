@@ -1,42 +1,245 @@
 <!DOCTYPE html>
-
+<html>
 	<head>
 	
 		<title> Community </title>
 		
-		<script src="script.js"></script>
-		
-		<link rel="stylesheet" type="text/css=" href="style.css">
-		
-	<head>
+		<link rel="stylesheet" type="text/css=" href="GWC_project2"/"style.css">
 	
-	<br>
 	
-	<body>
-	
-		<h1>What issues does your community face?
-		
-		<div class="dropdown">
-			<button class="dropbtn">Excessive Waste</button>
-			<div class="dropdown-content">
-				<p="#">Statistic</p>
-			</div>
-		</div>
-		
-		<div class="dropdown">
-			<button class="dropbtn">Water Usage</button>
-			<div class="dropdown-content">
-				<p="#">Statistic</p>
-			</div>
-		</div>
-		
-		<div class="dropdown">
-			<button class="dropbtn">eWaste</a>
-			<div class="dropdown-content">
-				<p="#">Statistic</p>
-			</div>
-		</div>
-				
-	</body>
+<style>
+	/* Popup container - can be anything you want */
+	.popup {
+	  position: relative;
+	  display: inline-block;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
 
+	/* The actual popup */
+	.popup .popuptext {
+	  visibility: hidden;
+	  width: 160px;
+	  background-color: #555;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 8px 0;
+	  position: absolute;
+	  z-index: 1;
+	  bottom: 125%;
+	  left: 50%;
+	  margin-left: -80px;
+	}
+
+	/* Popup arrow */
+	.popup .popuptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	}
+
+	/* Toggle this class - hide and show the popup */
+	.popup .show {
+	  visibility: visible;
+	  -webkit-animation: fadeIn 1s;
+	  animation: fadeIn 1s;
+	}
+
+	/* Add animation (fade in the popup) */
+	@-webkit-keyframes fadeIn {
+	  from {opacity: 0;} 
+	  to {opacity: 1;}
+	}
+
+	@keyframes fadeIn {
+	  from {opacity: 0;}
+	  to {opacity:1 ;}
+	}
+</style>
+
+
+<body style="text-align:center">
+
+<h2>Community</h2>
+
+<h4> What issues does your community face? </h4>
+
+<div class="popup" onclick="myFunction()">Excessive Waste
+  <span class="popuptext" id="myPopup">Statistic 1</span>
+</div>
+
+<div class="popup" onclick="myFunction1()">| Water Usage
+  <span class="popuptext" id="myPopup1">Statistic 2</span>
+</div>
+
+<div class="popup" onclick="myFunction2()">| eWaste
+  <span class="popuptext" id="myPopup2">Statistic 3</span>
+</div>
+
+<br>
+<br>
+
+<h4> Are there recycling programs in your neighborhood? </h4>
+
+<div class="popup" onclick="myFunction3()">Yes
+  <span class="popuptext" id="myPopup3">Yes Statistic</span>
+</div>
+
+<div class="popup" onclick="myFunction4()">| No
+  <span class="popuptext" id="myPopup4">No Statistic/how to start programs</span>
+</div>
+
+<br>
+<br>
+
+<h4> Where does your community throw away eWaste? </h4>
+
+<div class="popup" onclick="myFunction5()"> Hazardous Landfill
+  <span class="popuptext" id="myPopup5">Statistic 1</span>
+</div>
+
+<div class="popup" onclick="myFunction6()">| Recycling Bin/Nearest Recycling Center
+  <span class="popuptext" id="myPopup6">Statistic 2</span>
+</div>
+
+<div class="popup" onclick="myFunction7()">| Home Trash Can
+  <span class="popuptext" id="myPopup7">Statistic 3</span>
+</div>
+
+<br>
+<br>
+
+<h4> How many of the lawns in your neighborhood green? </h4>
+
+<div class="popup" onclick="myFunction8()"> Majority
+  <span class="popuptext" id="myPopup8">Statistic 1</span>
+</div>
+
+<div class="popup" onclick="myFunction9()">| Some/About Half
+  <span class="popuptext" id="myPopup9">Statistic 2</span>
+</div>
+
+<div class="popup" onclick="myFunction10()">| None
+  <span class="popuptext" id="myPopup10">Statistic 3</span>
+</div>
+
+<br>
+<br>
+
+<h4> How active are you in helping your community? </h4>
+
+<div class="popup" onclick="myFunction11()"> I help a lot or whenever I can.
+  <span class="popuptext" id="myPopup11">Statistic 1</span>
+</div>
+
+<div class="popup" onclick="myFunction12()">| I help just a little bit.
+  <span class="popuptext" id="myPopup12">Statistic 2</span>
+</div>
+
+<div class="popup" onclick="myFunction13()">| I don't help out in my community.
+  <span class="popuptext" id="myPopup13">Statistic 3</span>
+</div>
+
+<br>
+<br>
+
+<h4> How do you help in your community? </h4>
+
+<input id="myIput" value="answer...">
+<button id="myBtn" onclick="javascript:alert('Great! Other ways you could help out in your community is...')">Enter</button>
+
+
+<script>
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+
+function myFunction5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+
+function myFunction6() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show");
+}
+
+function myFunction7() {
+  var popup = document.getElementById("myPopup7");
+  popup.classList.toggle("show");
+}
+
+function myFunction8() {
+  var popup = document.getElementById("myPopup8");
+  popup.classList.toggle("show");
+}
+
+function myFunction9() {
+  var popup = document.getElementById("myPopup9");
+  popup.classList.toggle("show");
+}
+
+function myFunction10() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
+
+function myFunction11() {
+  var popup = document.getElementById("myPopup11");
+  popup.classList.toggle("show");
+}
+
+function myFunction12() {
+  var popup = document.getElementById("myPopup12");
+  popup.classList.toggle("show");
+}
+
+function myFunction13() {
+  var popup = document.getElementById("myPopup13");
+  popup.classList.toggle("show");
+}
+
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+</script>
+
+</body>
 </html>
+
