@@ -117,7 +117,7 @@ $(document).ready(function(){
 	  alert("Food!!");
 	  
 	  $("#q4").text("How did you get to your game?");
-	  var show = document.getElementById("q4-Walked/Biked");
+	  var show = document.getElementById("q4-Walked-or-Biked");
 	
 	 
 	 if (show.style.display === "none") {
@@ -141,7 +141,7 @@ $(document).ready(function(){
 	  alert("Food!!");
 	  
 	  $("#q4").text("How did you get to your game?");
-	  var show = document.getElementById("q4-Walked/Biked");
+	  var show = document.getElementById("q4-Walked-or-Biked");
 	
 	 
 	 if (show.style.display === "none") {
@@ -166,7 +166,7 @@ $(document).ready(function(){
 	  alert("Food!!");
 	  
 	  $("#q4").text("How did you get to your game?");
-	  var show = document.getElementById("q4-Walked/Biked");
+	  var show = document.getElementById("q4-Walked-or-Biked");
 	
 	 
 	 if (show.style.display === "none") {
@@ -185,22 +185,225 @@ $(document).ready(function(){
 		 show2.style.display = "block";
 	 }
 	 });
-	 
-	 $("#q4-Walked/Biked").click(function(){
+	  $("#q4-Walked-or-Biked").click(function(){
 	  alert("Walked/Biked!!");
 	  
-	  $("#q5").text("After you left your house, did you turn off the lights?");
-	  var show = document.getElementById("q5-Yes");
+	  $("#q5").text("When you were leaving your house, what did you forget to turn off?");
+	  var show = document.getElementById("q5-Lights");
 	
 	 
 	 if (show.style.display === "none") {
 		 show.style.display = "block";
 	 }
-	 	  var show1= document.getElementById("q5-No");
+	 	  var show1= document.getElementById("q5-Water");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	   var show1= document.getElementById("q5-Gas");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 var show1= document.getElementById("q5-I-turned-off-everything");
 
 		  
 	 if (show1.style.display === "none") {
 		 show1.style.display = "block";
 	 }
 	 });
-});
+	 
+	 $("#q4-By-car").click(function(){
+	  alert("By Car!!");
+	  
+	  $("#q5").text("When you were leaving your house, what did you forget to turn off?");
+	  var show = document.getElementById("q5-Lights");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q5-Water");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	   var show1= document.getElementById("q5-Gas");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 var show1= document.getElementById("q5-I-turned-off-everything");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+	  $("#q4-Public-Transport").click(function(){
+	  alert("Public Transport!!");
+	  
+	  $("#q5").text("When you were leaving your house, what did you forget to turn off?");
+  var show = document.getElementById("q5-Lights");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q5-Water");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	   var show1= document.getElementById("q5-Gas");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 var show1= document.getElementById("q5-I-turned-off-everything");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+	 
+	   $("#q5-Lights").click(function(){
+	  alert("Not Good!!");
+	  
+	  $("#q6").text("What type of plastic bag do you use to carry your groceries?");
+	  var show = document.getElementById("q6-Plastic");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q6-Paper");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	  var show1= document.getElementById("q6-Reusable");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+	 
+	 $("#q5-Water").click(function(){
+	  alert("Not Good!!");
+	  
+	  $("#q6").text("What type of plastic bag do you use to carry your groceries?");
+	  var show = document.getElementById("q6-Plastic");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q6-Paper");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	  var show1= document.getElementById("q6-Reusable");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+	 
+	 $("#q5-Gas").click(function(){
+	  alert("Not Good!!");
+	  
+	  $("#q6").text("What type of plastic bag do you use to carry your groceries?");
+	  var show = document.getElementById("q6-Plastic");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q6-Paper");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	  var show1= document.getElementById("q6-Reusable");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+
+	   $("#q5-I-turned-off-everything").click(function(){
+	  alert("Good Job!!");
+	  
+	  $("#q6").text("What type of plastic bag do you use to carry your groceries?");
+	  var show = document.getElementById("q6-Plastic");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 	  var show1= document.getElementById("q6-Paper");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	  var show1= document.getElementById("q6-Reusable");
+
+		  
+	 if (show1.style.display === "none") {
+		 show1.style.display = "block";
+	 }
+	 });
+
+	      $("#q6-Plastic").click(function(){
+	  alert("Statistics!!");
+	  
+	  $("#q7").text("Positive Message");
+	  var show = document.getElementById("");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 });
+	 
+	   $("#q6-Paper").click(function(){
+	  alert("Statistics!!");
+	  
+	  $("#q7").text("Positive Message");
+	  var show = document.getElementById("");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 });
+	 
+	  $("#q6-Reusable").click(function(){
+	  alert("Statistics!!");
+	  
+	  $("#q7").text("Positive Message");
+	  var show = document.getElementById("");
+	
+	 
+	 if (show.style.display === "none") {
+		 show.style.display = "block";
+	 }
+	 });
+	 
+	  });
