@@ -375,36 +375,36 @@ $(document).ready(function(){
 		  alert("Plastic doesn’t biodegrade. It’s forever. Plastic bags get into soil and slowly release toxic chemicals. They eventually break down into the soil, with the unfortunate result being that animals eat them and often choke and die.!!");
 		
 		$("#q7").text("Use public transport. Keep up car maintenance to reduce leakage of oil, antifreeze and other fluids. Keep a trash bag in the car. Never throw trash out of your car window.");
-		  var show = document.getElementById("");
-		
+		 var showEnd = document.getElementById("toggle");
 		 
-		 if (show.style.display === "none") {
-			 show.style.display = "block";
+		  if (showEnd.style.display === "none") {
+			 showEnd.style.display = "block";
 		 }
 	 });
 	 
 	   $("#q6-Paper").click(function(){
 	  alert("Statistics!!");
 	  
-	  $("#q7").text("Positive Message");
-	  var show = document.getElementById("");
-	
+	  $("#q7").text("Use public transport. Keep up car maintenance to reduce leakage of oil, antifreeze and other fluids. Keep a trash bag in the car. Never throw trash out of your car window.");
 	 
-	 if (show.style.display === "none") {
-		 show.style.display = "block";
-	 }
+	  var showEnd = document.getElementById("toggle");
+		 
+		  if (showEnd.style.display === "none") {
+			 showEnd.style.display = "block";
+		 }
+	 
 	 });
 	 
 	  $("#q6-Reusable").click(function(){
 	  alert("Statistics!!");
 	  
-	  $("#q7").text("Positive Message");
-	  var show = document.getElementById("");
-	
+	  $("#q7").text("Use public transport. Keep up car maintenance to reduce leakage of oil, antifreeze and other fluids. Keep a trash bag in the car. Never throw trash out of your car window.");
 	 
-	 if (show.style.display === "none") {
-		 show.style.display = "block";
-	 }
+	  var showEnd = document.getElementById("toggle");
+		 
+		  if (showEnd.style.display === "none") {
+			 showEnd.style.display = "block";
+		 }
 	 });
 	 
 	  });
